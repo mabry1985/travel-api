@@ -1,4 +1,4 @@
-class DestinationsController < ApplicationController
+class V1::DestinationsController < ApplicationController
   include Response
 
   def index
