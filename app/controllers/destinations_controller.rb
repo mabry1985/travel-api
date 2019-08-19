@@ -34,6 +34,11 @@ class DestinationsController < ApplicationController
     end
   end
 
+  def random
+    @destination = Destination.random
+   json_response(@destination)
+  end
+
   private
 
   def destination_params
